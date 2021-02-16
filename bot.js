@@ -4,6 +4,8 @@ function answerQuery(query) {
     return "I do not care too much about weather, I'm locked inside a data center.";
 	if (query.indexOf("Tea") != -1 || query.indexOf("Biscuits") != -1 )
 	return "Binary biscuits dont taste so good."
+  if (query.indexOf("football") != -1)
+    return "I don't like football. It's hard to enjoy when you don't have feet.";
   return "Sorry Dave, I cannot do that."
 }
 
