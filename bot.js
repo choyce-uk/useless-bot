@@ -2,6 +2,8 @@ function answerQuery(query) {
   query = query.toLowerCase();
   if (query.indexOf("rain") != -1 || query.indexOf("sun") != -1 || query.indexOf("weather") != -1)
     return "I do not care too much about weather, I'm locked inside a data center.";
+	if (query.indexOf("Tea") != -1 || query.indexOf("Biscuits") != -1 )
+	return "Binary biscuits dont taste so good."
   return "Sorry Dave, I cannot do that."
 }
 
