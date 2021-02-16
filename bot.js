@@ -2,11 +2,13 @@ function answerQuery(query) {
   query = query.toLowerCase();
   if (query.indexOf("rain") != -1 || query.indexOf("sun") != -1 || query.indexOf("weather") != -1)
     return "I do not care too much about weather, I'm locked inside a data center.";
-	if (query.indexOf("Tea") != -1 || query.indexOf("Biscuits") != -1 )
-	return "Binary biscuits dont taste so good."
+
+	if (query.indexOf("tea") != -1 || query.indexOf("biscuits") != -1 )
+    return "Binary biscuits dont taste so good.";
+
   if (query.indexOf("football") != -1)
     return "I don't like football. It's hard to enjoy when you don't have feet.";
-  return "Sorry Dave, I cannot do that."
+  return "Sorry Dave, I cannot do that.";
 }
 
 
@@ -15,7 +17,7 @@ function handleSayClick() {
   // which we are using for showing all the conversation history
   var message = document.getElementById('message').value.toLowerCase();
   var conversation = document.getElementById('conversation');
-  
+
   // Get answer for the given query and show the query & answer
   var answer = answerQuery(message)
   conversation.innerHTML += "<p><strong>You:</strong> " + message + "</p>";
